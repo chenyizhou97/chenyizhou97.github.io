@@ -52,7 +52,7 @@ function CreateScenesFromData(data) {
   }
 }
 
-function Scene(sceneText, options, nextScenes,x,y,r ,g, b) {
+function Scene(sceneText, options, nextScenes, x, y, r, g, b) {
   this.sceneText = sceneText;
   this.options = options;
   this.nextScenes = nextScenes;
