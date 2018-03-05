@@ -1,19 +1,3 @@
-// code 2
-// section a
-// bfa dt
-// spring 2018
-// bryan ma
-
-// week 5
-// choose your own adventure data
-
-// scene data model: 
-
-// {
-//   sceneText: '', //the scene text
-//   options: [], // the text options to choose
-//   nextScenes: []  // the target scene based on the previous options
-// }
 
 var sceneData;
 
@@ -56,8 +40,8 @@ function Scene(sceneText, options, nextScenes, x, y, r, g, b) {
   this.sceneText = sceneText;
   this.options = options;
   this.nextScenes = nextScenes;
-  this.position.x = x;
-  this.position.y = y;
+  this.x = x;
+  this.y = y;
   this.r = r;
   this.g = g;
   this.b = b;
@@ -68,7 +52,7 @@ function Scene(sceneText, options, nextScenes, x, y, r, g, b) {
     text(this.sceneText, 100, 100);
      
     fill(this.r,this.g,this.b); 
-    ellipse(this.position.x,this.position.y,100,100);
+    ellipse(this.x,this.y,100,100);
 
     for (var i = 0; i < options.length; i++) {
       text('OPTION ' + (i + 1) + ': ' + this.options[i], 150, 200 + i * 50);
@@ -82,4 +66,4 @@ function keyPressed() {
   if (newScene !== undefined) {
     currentScene = newScene;
   }
-}
+-}
