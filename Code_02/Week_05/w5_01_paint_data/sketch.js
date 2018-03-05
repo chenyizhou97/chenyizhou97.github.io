@@ -30,12 +30,12 @@ function draw() {
   text("press 'L' to load a json file from your computer.", 50, 630);
 }
 
-function PaintMark(position) {
+function PaintMark(position, scale, R, G, B) {
   this.position = position;
-  this.scale = random(10,35);
-  this.R = random (0,255);
-  this.G = random (0,255);
-  this.B = random (0,255);
+  this.scale = scale;
+  this.R = R;
+  this.G = G;
+  this.B = B;
 
 
   this.display = function() {
@@ -47,7 +47,7 @@ function PaintMark(position) {
 }
 
 function mouseDragged() {
-  paintmarks.push(new PaintMark(createVector(mouseX, mouseY)));
+  paintmarks.push(new PaintMark(createVector(mouseX, mouseY), random(10, 30), random(0,255), random(0,255), random(0,255)));
 }
 
 function keyPressed() {
@@ -86,6 +86,10 @@ function parsePaintData(data) {
   R,G,B;
 
   for (var i = 0; i < data.length; i++) {
-    paintmarks.push(new PaintMark(createVector(data[i].x, data[i].y)));
+
+    // console.log(data[i].scale);
+
+    paintmarks.push(new PaintMark(createVector(data[i].x, data[i].y), data[i].scale, data[i].R, data[i].G, data[i].B));
   }
+
 }
