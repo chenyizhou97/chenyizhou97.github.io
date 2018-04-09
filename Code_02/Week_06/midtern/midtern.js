@@ -24,6 +24,9 @@ var food3X, food3Y;
 var totalP1 = 0;
 var totalP2 = 0;
 
+var foods = [];
+var foodNums=1;
+var curScore,preScore;
 
   function centerCanvas() {
   var x = (windowWidth - width) / 2;
@@ -38,11 +41,14 @@ var totalP2 = 0;
 function setup() {
   cnv = createCanvas(900, 500);
   centerCanvas();
+
+
   p1 = new Snake1();
   p2 = new Snake2();
-  food1 = new food(0);
-  food2 = new food(1);
-  food3 = new food(2);
+
+for (var i= 0; i<foodNums; i++){
+	foods.push(new food());
+ }
 }
 
 function draw() {
@@ -198,6 +204,16 @@ function food(num){
   }
 }
 
+function moreFood(){
+	console.log(curScore,",",preScore);
+	curScore = totalP1+totalP2;
+	preScore = 0;
+	while(curScore-preScore>4){
+		foodNums= foodNums+2;
+		preScore = curScore;
+	}
+}
+
 function drawField() {
   stroke(0);
   strokeWeight(2);
@@ -233,17 +249,25 @@ function drawScene(whichScene) {
      case sceneState.GAME:
        background(255);
        drawField();
+       
 
-       food1.display();
-       food2.display();
-       food3.display();       
+       for (var i=0; i<foods.length;i++){
+       	foods[i].update();
+       	foods[i].display();
+       	moreFood();
+       }
 
-       food1.update();
-       food2.update();
-       food3.update();
+       // food1.display();
+       // food2.display();
+       // food3.display();       
+
+       // food1.update();
+       // food2.update();
+       // food3.update();
 
        p1.update();
        p2.update();
+
        
        fill(100,100,255);
        p1.display();
@@ -252,6 +276,8 @@ function drawScene(whichScene) {
 
        p1.move(p1Up, p1Down, p1Left, p1Right);
        p2.move(p2Up, p2Down, p2Left, p2Right);
+
+
        break;
 
      case sceneState.WIN:
