@@ -3,7 +3,7 @@ var weather;
 
 function setup() {
  createCanvas(600,400);
- loadJSON('https://api.wunderground.com/api/3e880f4563c3edaa/conditions/q/CA/San_Francisco.json',gotData)；
+ loadJSON('https://api.wunderground.com/api/3e880f4563c3edaa/conditions/q/CA/San_Francisco.json',gotData);
     
 }
 
