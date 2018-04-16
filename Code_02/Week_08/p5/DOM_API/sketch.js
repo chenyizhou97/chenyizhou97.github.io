@@ -7,7 +7,7 @@ var foodTyped; // variable storing the string to the currently selected breed
 function setup() {
   noCanvas();
 
-  loadJSON('http://www.recipepuppy.com/api/', gotAllrecipes);
+  loadJSON('https://www.recipepuppy.com/api/', gotAllrecipes);
 
   createElement('h1', 'Here is the recipe wiki');
   createElement('h3', 'Try to find out the dish you want to make and see how to make it!');
@@ -37,7 +37,7 @@ function searchEvent() {
 
 // http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3 
 function onButtonPressed() {
-	loadJSON('http://www.recipepuppy.com/api/?q=' + selectedrecipe + '&p=1', onGotRecipes);
+	loadJSON('https://www.recipepuppy.com/api/?q=' + selectedrecipe + '&p=1', onGotRecipes);
 }
 
 // callback for line 58, when the API request is completed, display the new image and delete the old one.
