@@ -7,10 +7,10 @@ var foodTyped; // variable storing the string to the currently selected breed
 function setup() {
   noCanvas();
 
-  loadJSON('https://www.recipepuppy.com/api/', gotAllrecipes);
+  loadJSON('https://github.com/sinker/tacofancy', gotAllrecipes);
 
-  createElement('h1', 'Here is the recipe wiki');
-  createElement('h3', 'Try to find out the dish you want to make and see how to make it!');
+  createElement('h1', 'Here is the Taco wiki');
+  createElement('h3', 'Try to find out the Taco you want to make and see how to make it!');
 
   buttonElement = createButton('Delicious!');
   buttonElement.mousePressed(onButtonPressed);

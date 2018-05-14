@@ -204,15 +204,15 @@ function food(num){
   }
 }
 
-function moreFood(){
-	console.log(curScore,",",preScore);
-	curScore = totalP1+totalP2;
-	preScore = 0;
-	while(curScore-preScore>4){
-		foodNums= foodNums+2;
-		preScore = curScore;
-	}
-}
+// function moreFood(){
+// 	console.log(curScore,",",preScore);
+// 	curScore = totalP1+totalP2;
+// 	preScore = 0;
+// 	if(curScore-preScore>4){
+// 		foodNums= foodNums+2;
+// 		preScore = curScore;
+// 	}
+// }
 
 function drawField() {
   stroke(0);
@@ -247,14 +247,13 @@ function drawScene(whichScene) {
       break;
      
      case sceneState.GAME:
-       background(255);
+       background(255);	
        drawField();
-       
+       // moreFood();
 
        for (var i=0; i<foods.length;i++){
        	foods[i].update();
        	foods[i].display();
-       	moreFood();
        }
 
        // food1.display();
