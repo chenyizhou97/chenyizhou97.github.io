@@ -246,7 +246,7 @@ function drawScene(whichScene) {
   //  }
   // }
 
-  if(score=10){
+  if(score>10){
   	gameEnd=true;
   }
 
