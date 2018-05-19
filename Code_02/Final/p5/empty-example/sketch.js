@@ -452,11 +452,7 @@ function drawScene(whichScene) {
       }
       break;
     case sceneState.WIN:
-      if (keyOn) {
-        currentState = 0;
-        setUpScene(currentState);
-      }
-      break;            
+     break;           
     }
   }
 
