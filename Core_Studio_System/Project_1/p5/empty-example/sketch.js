@@ -20,9 +20,9 @@ function preload() {
 function setup() {
   createCanvas(1300, 700);
   g = 255;
-  home = createSprite(274.5,367,349,266);
+  home = createSprite(274.5,417,349,266);
   home.addImage(h);
-  school = createSprite(1032,300.5,336,339);
+  school = createSprite(1032,350.5,336,339);
   school.addImage(s);
 
 }
@@ -43,7 +43,7 @@ if(gspeed){
 
 background(r, g, b);
 
-  i = createSprite(iX,394,85,212);
+  i = createSprite(iX,444,85,212);
   i.addImage(me);
 
 
