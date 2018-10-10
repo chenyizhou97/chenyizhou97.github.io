@@ -22,13 +22,16 @@ function setup() {
   g = 255;
   home = createSprite(274.5,367,349,266);
   home.addImage(h);
-  school = createSprite(1032,367,336,339);
+  school = createSprite(1032,300.5,336,339);
   school.addImage(s);
 
 }
 
 
 function draw() {
+
+iX = mouseX;
+
  if(!gspeed){
   g--;
  }
@@ -40,11 +43,11 @@ if(gspeed){
 
 background(r, g, b);
 
-  i = createSprite(mouseX,394,85,212);
+  i = createSprite(iX,394,85,212);
   i.addImage(me);
 
 
-    fill(150);
+  fill(150);
   noStroke();
   rect(0,500,1300,200);
 
