@@ -8,7 +8,7 @@ var  r = 9;
 var  b = 255;
 var g;
 var gspeed = false;
-
+var iX;
 
 function preload() {
   s = loadImage("assets/school.png")
@@ -20,11 +20,9 @@ function preload() {
 function setup() {
   createCanvas(1300, 700);
   g = 255;
-  i = createSprite(mouseX,394,85,212);
-  i.addImage(me);
   home = createSprite(274.5,367,349,266);
   home.addImage(h);
-  school = createSprite(1032,300.5,336,339);
+  school = createSprite(1032,367,336,339);
   school.addImage(s);
 
 }
@@ -41,6 +39,9 @@ if(gspeed){
 
 
 background(r, g, b);
+
+  i = createSprite(mouseX,394,85,212);
+  i.addImage(me);
 
 
     fill(150);
