@@ -20,7 +20,7 @@ function preload() {
 function setup() {
   createCanvas(1300, 700);
   g = 255;
-  i = createSprite(200,288,85,212);
+  i = createSprite(mouseX,288,85,212);
   i.addImage(me);
   home = createSprite(100,234,349,266);
   home.addImage(h);
