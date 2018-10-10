@@ -22,9 +22,9 @@ function setup() {
   g = 255;
   i = createSprite(mouseX,394,85,212);
   i.addImage(me);
-  home = createSprite(100,234,349,266);
+  home = createSprite(274.5,367,349,266);
   home.addImage(h);
-  school = createSprite(864,161,336,339);
+  school = createSprite(1032,300.5,336,339);
   school.addImage(s);
 
 }
