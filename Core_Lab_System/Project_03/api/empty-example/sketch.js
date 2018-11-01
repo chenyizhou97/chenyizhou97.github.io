@@ -1,4 +1,4 @@
-var api = 'http://api.population.io/1.0/population/';
+var api = 'https://api.population.io/1.0/population/';
 var country = '/United%20States/';
 var age_y = '/25/';
 var age_o = '/75/';
