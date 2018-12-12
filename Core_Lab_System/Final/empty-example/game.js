@@ -260,9 +260,11 @@ for (var i = 0; i < booms.length; i++){
    fill(255);
    textSize(30);
    textAlign(CENTER);
-   text('Bomb:'+ bomb, 500, 40);
-   text('Score:'+ scores,60,40);
+   text('Bomb:'+ bomb, 530, 40);
+   text('Score:'+ scores,80,40);
    text('Power:'+ power,width/2,40);
+
+
    break;
 
     case sceneState.SCORE:
@@ -299,12 +301,12 @@ for (var i = 0; i < booms.length; i++){
    	if(currentState>3){
    		currentState = 0;
    	}
-   	createP('The Word became flesh, and lived among us. We saw his glory, such glory as of the one and only Son of the Father, full of grace and truth.');
-   	createP('No one has seen God at any time. The one and only Son, who is in the bosom of the Father, he has declared him.')
-   	createP('You worship that which you don’t know. We worship that which we know; for salvation is from the Jews.')
    }
   
 	if(keyCode === 32){
+   createP('The Word became flesh, and lived among us. We saw his glory, such glory as of the one and only Son of the Father, full of grace and truth.');
+    createP('No one has seen God at any time. The one and only Son, who is in the bosom of the Father, he has declared him.')
+    createP('You worship that which you don’t know. We worship that which we know; for salvation is from the Jews.')
 		bomb -= 1;
 		Color = 233;
 for (var j = 0; j < demons.length; j++) {
