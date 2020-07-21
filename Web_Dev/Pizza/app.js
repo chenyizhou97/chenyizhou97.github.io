@@ -71,7 +71,7 @@ pizza_anim.setSpeed(1);
 
 tl.fromTo(title, 3, { opacity: 0 }, { opacity: 1 }, "+=2")
     .fromTo(title, 2, { y: '150px' }, { y: '0px' }, "-=3")
-    .fromTo(appear, 0.1, { opacity: 1 }, { opacity: 0 }, "+=1")
+    .fromTo(appear, 0.1, { opacity: 1 }, { opacity: 0 }, "+=2")
     .fromTo(fall, 0.1, { opacity: 0 }, { opacity: 1 }, "-=1")
 
 
