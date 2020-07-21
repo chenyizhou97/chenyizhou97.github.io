@@ -1,5 +1,7 @@
             @charset "utf-8";
             body {
+                min-width: 100%;
+                max-height: 1080px;
                 margin: 0 auto;
                 background: linear-gradient(to left, #fd2f2f, #ff5303);
                 text-align: center;
@@ -16,109 +18,105 @@
             }
             
             #pizza_fall {
-                margin-top: 57vh;
-                right: 0.3vw;
+                top: 534px;
                 z-index: -1;
             }
             
             .title {
                 position: absolute;
-                top: 10vh;
+                top: 40px;
                 left: 31vw;
                 color: white;
-                text-shadow: 0.25rem 0.25rem 0.625rem #8d4320;
-                font-size: 8vw;
+                text-shadow: 4px 4px 10px #8d4320;
+                font-size: 155px;
                 font-family: 'Judson';
-                letter-spacing: 0.5rem;
+                letter-spacing: 8px;
             }
             /* page 2 */
             
             .text_container {
                 position: absolute;
-                top: -0.14vh;
-                left: 5.5vw;
+                top: -130px;
+                left: 100px;
                 font-family: 'Judson';
             }
             
             .text_container h2 {
                 text-align: left;
-                font-size: 3.75em;
-                letter-spacing: 0.313rem;
+                font-size: 60px;
+                letter-spacing: 5px;
                 color: white;
-                text-shadow: 0.25rem 0.25rem 0.625rem #8d4320;
+                text-shadow: 2px 2px 5px #8d4320;
             }
             
             .text_container p {
                 text-align: right;
-                margin-top: 10vh;
+                margin-top: 50px;
                 margin-right: 56vw;
-                font-size: 1.313vw;
+                margin-left: 0px;
+                font-size: 16pt;
                 color: white;
+                /* text-shadow: 2px 2px 5px #8d4320; */
             }
             
             .text_container #p2 {
                 text-align: left;
-                margin-right: 4.4vw;
+                margin-top: 100px;
+                margin-right: 80px;
                 margin-left: 50vw;
+                font-size: 16pt;
             }
             
             .text_container #p3 {
-                margin-top: 15vh;
+                margin-top: 100px;
             }
             
             #matzah {
                 position: absolute;
-                top: 15vh;
-                right: 17.6vw;
-                width: 22vw;
-                height: auto;
+                top: 50px;
+                right: 320px;
             }
             
             #europe {
                 position: absolute;
-                top: 50vh;
-                left: 10vw;
-                bottom: 50vh;
-                width: 20vw;
-                height: auto;
+                top: 320px;
+                left: 210px;
             }
             
             #asia {
                 position: absolute;
-                bottom: -3.22vh;
-                right: 12.7vw;
-                width: 28.25vw;
-                height: auto;
+                bottom: -30px;
+                right: 230px;
             }
             
             #middle_line {
                 position: absolute;
-                width: 0.28vw;
-                height: 79vh;
+                width: 5px;
+                height: 79%;
                 background-color: #ffd88a;
                 right: 50vw;
             }
             
             .text_container_2 {
-                margin-left: 5.5vw;
-                margin-right: 5.5vw;
-                margin-top: 20vh;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 400px;
                 font-family: 'Judson';
             }
             
             .text_container_2 h2 {
                 text-align: left;
-                font-size: 3.75em;
-                letter-spacing: 0.313rem;
+                font-size: 60px;
+                letter-spacing: 5px;
                 color: white;
-                text-shadow: 0.25rem 0.25rem 0.625rem #8d4320;
+                text-shadow: 2px 2px 5px #8d4320;
             }
             /* page 3 */
             
             #scroll {
                 position: absolute;
-                right: 3.3vw;
-                margin-top: -4.2vh;
+                right: 60px;
+                margin-top: -40px;
                 z-index: -1;
             }
             
@@ -258,9 +256,9 @@
             
             #cheese {
                 position: absolute;
-                width: 450px;
-                height: 330px;
-                top: 5920px;
+                width: 550px;
+                height: 420px;
+                top: 5870px;
                 right: 270px;
             }
             /* lastpage */
@@ -381,41 +379,14 @@
                 stroke: black;
                 stroke-width: 364;
                 stroke-dasharray: 1146.2;
+                /* animation: wipe 2s ease-in-out;
+                animation-fill-mode: forwards; */
             }
-            
-            .credit_container {
-                border-top: 2px solid black;
-                margin-left: 200px;
-                margin-right: 300px;
-                font-family: 'Judson';
-                font-size: 15pt;
-            }
-            
-            .credit_container h3 {
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            
-            #goTotop {
-                position: absolute;
-                top: 7610px;
-                right: 220px;
-                border: none;
-                background-color: transparent;
-                opacity: 0.6;
-            }
-            
-            #goTotop:hover {
-                opacity: 1;
-                transition-duration: 1s;
-                animation: float 1s linear infinite;
-            }
-            
-            @keyframes float {
+            /* @keyframes wipe {
                 from {
-                    top: 7610px
+                    stroke-dashoffset: 0;
                 }
                 to {
-                    top: 7590px
+                    stroke-dashoffset: 734;
                 }
-            }
+            } */

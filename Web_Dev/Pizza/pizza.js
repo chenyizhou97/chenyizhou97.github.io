@@ -10,15 +10,13 @@ let slice_4x, slice_4y;
 let slice_5x, slice_5y;
 let slice_6x, slice_6y;
 
-let vh = window.innerHeight;
-let vw = window.innerWidth;
 
 
-let x1_1 = 0.32 * vw,
-    y1_1 = 0.357 * vh,
-    x2_1 = 0.5 * vw,
-    y2_1 = 0.284 * vh,
-    x3_1 = 0.502 * vw,
+let x1_1 = 622,
+    y1_1 = 335,
+    x2_1 = 960,
+    y2_1 = 265,
+    x3_1 = 965,
     y3_1 = 545;
 
 let x1_2 = 471,
@@ -56,8 +54,6 @@ let x1_6 = 968,
     x3_6 = 976,
     y3_6 = 540;
 
-
-
 function preload() {
     bottom = loadImage('assets/bottom.png');
     pizzaslice_1 = loadImage('assets/Pizzaslice_1.png');
@@ -69,7 +65,7 @@ function preload() {
 }
 
 function setup() {
-    cnv = createCanvas(vw, vh);
+    cnv = createCanvas(1920, 1080);
     cnv.parent('pizza_cooked');
     imageMode(CENTER);
     image(bottom, width / 2, height / 2);
@@ -79,8 +75,6 @@ function setup() {
     alpha_4 = 255;
     alpha_5 = 255;
     alpha_6 = 255;
-
-    console.log(vh, vw);
 
     mouseOn_1 = false;
     mouseOn_2 = false;
@@ -94,7 +88,7 @@ function setup() {
 }
 
 function draw() {
-    cnv = createCanvas(vw, vh);
+    cnv = createCanvas(1920, 1080);
     cnv.parent('pizza_cooked');
 
     imageMode(CENTER);
