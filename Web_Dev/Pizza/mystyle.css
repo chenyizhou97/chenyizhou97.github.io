@@ -12,7 +12,9 @@
             
             #pizza_pie {
                 position: absolute;
-                top: 400px;
+                top: -400px;
+                width: 1920px;
+                height: 1500px;
             }
             
             #pizza_fall {
