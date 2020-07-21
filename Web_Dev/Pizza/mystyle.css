@@ -13,7 +13,8 @@
             #pizza_pie {
                 position: absolute;
                 top: -43vh;
-                width: 98vw;
+                right: 0.005vw;
+                width: 100vw;
                 height: 158vh;
             }
             
