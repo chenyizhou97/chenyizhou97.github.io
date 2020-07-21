@@ -131,9 +131,10 @@ function onDOMLoaded(e) {
 var lottieScene = new ScrollMagic.Scene({
         duration: '100%',
         offset: 400,
-        triggerHook: 1
+        triggerHook: 0.5
     })
     .setPin("#pizza_fall")
+    .addIndicators({ name: "1 (duration: 0)" })
     .setTween(anim_control)
     .addTo(controller)
 
