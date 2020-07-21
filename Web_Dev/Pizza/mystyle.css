@@ -379,14 +379,41 @@
                 stroke: black;
                 stroke-width: 364;
                 stroke-dasharray: 1146.2;
-                /* animation: wipe 2s ease-in-out;
-                animation-fill-mode: forwards; */
             }
-            /* @keyframes wipe {
+            
+            .credit_container {
+                border-top: 2px solid black;
+                margin-left: 200px;
+                margin-right: 300px;
+                font-family: 'Judson';
+                font-size: 15pt;
+            }
+            
+            .credit_container h3 {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            
+            #goTotop {
+                position: absolute;
+                top: 7610px;
+                right: 220px;
+                border: none;
+                background-color: transparent;
+                opacity: 0.6;
+            }
+            
+            #goTotop:hover {
+                opacity: 1;
+                transition-duration: 1s;
+                animation: float 1s linear infinite;
+            }
+            
+            @keyframes float {
                 from {
-                    stroke-dashoffset: 0;
+                    top: 7610px
                 }
                 to {
-                    stroke-dashoffset: 734;
+                    top: 7590px
                 }
-            } */
+            }
