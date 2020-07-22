@@ -122,16 +122,18 @@
                 position: absolute;
                 right: 3.3vw;
                 margin-top: -4.2vh;
+                width: 93.75vw;
+                height: auto;
                 z-index: -1;
             }
             
             .text_container_2 p {
                 text-align: justify;
-                margin-top: 100px;
-                margin-bottom: 150px;
-                margin-right: 145px;
-                margin-left: 195px;
-                font-size: 14.5pt;
+                margin-top: 10.6vh;
+                margin-bottom: 16vh;
+                margin-right: 7.55vw;
+                margin-left: 10.16vw;
+                font-size: 1vw;
                 color: black;
                 font-family: 'Nothing You Could Do';
             }
@@ -139,8 +141,10 @@
             
             #pizza_cutter {
                 position: absolute;
-                top: 3800px;
-                right: 60px;
+                top: 420vh;
+                right: 3.125vw;
+                width: 18.8vw;
+                height: auto;
             }
             /* page 5 */
             

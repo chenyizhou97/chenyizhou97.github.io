@@ -14,11 +14,11 @@ let vh = window.innerHeight;
 let vw = window.innerWidth;
 
 
-let x1_1 = 0.32 * vw,
-    y1_1 = 0.357 * vh,
-    x2_1 = 0.5 * vw,
-    y2_1 = 0.284 * vh,
-    x3_1 = 0.502 * vw,
+let x1_1 = 622,
+    y1_1 = 335,
+    x2_1 = 960,
+    y2_1 = 265,
+    x3_1 = 965,
     y3_1 = 545;
 
 let x1_2 = 471,
