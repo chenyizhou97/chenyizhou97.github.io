@@ -108,82 +108,82 @@ function trianCollision6(px, py, x1, y1, x2, y2, x3, y3) {
 
 function update_1() {
     if (mouseOn_1) {
-        if (slice_1x >= width / 2 - 334) {
-            slice_1x -= 20;
-            slice_1y -= 20;
+        if (slice_1x >= 0.326 * vw) {
+            slice_1x -= 0.01 * vw;
+            slice_1y -= 0.02 * vh;
             alpha_1 -= 25;
         }
     } else {
-        slice_1x = width / 2 - 134;
-        slice_1y = height / 2 - 116;
+        slice_1x = 0.43 * vw;
+        slice_1y = 0.376 * vh;
         alpha_1 = 255;
     }
 }
 
 function update_2() {
     if (mouseOn_2) {
-        if (slice_2x >= width / 2 - 441) {
-            slice_2x -= 20;
+        if (slice_2x >= 0.27 * vw) {
+            slice_2x -= 0.01 * vw;
             alpha_2 -= 25;
         }
     } else {
-        slice_2x = width / 2 - 241;
-        slice_2y = height / 2 - 42;
+        slice_2x = 0.374 * vw;
+        slice_2y = 0.455 * vh;
         alpha_2 = 255;
     }
 }
 
 function update_3() {
     if (mouseOn_3) {
-        if (slice_3x >= width / 2 - 437) {
-            slice_3x -= 20;
-            slice_3y += 20;
+        if (slice_3x >= 0.272 * vw) {
+            slice_3x -= 0.01 * vw;
+            slice_3y += 0.02 * vh;
             alpha_3 -= 25;
         }
     } else {
-        slice_3x = width / 2 - 237;
-        slice_3y = height / 2 + 146;
+        slice_3x = 0.377 * vw;
+        slice_3y = 0.656 * vh;
         alpha_3 = 255;
     }
 }
 
 function update_4() {
     if (mouseOn_4) {
-        if (slice_4x <= width / 2 + 443) {
-            slice_4x += 20;
-            slice_4y += 20;
+        if (slice_4x <= 0.73 * vw) {
+            slice_4x += 0.01 * vw;
+            slice_4y += 0.02 * vh;
             alpha_4 -= 25;
         }
     } else {
-        slice_4x = width / 2 + 243;
-        slice_4y = height / 2 + 146;
+        slice_4x = 0.625 * vw;
+        slice_4y = 0.656 * vh;
         alpha_4 = 255;
     }
 }
 
 function update_5() {
     if (mouseOn_5) {
-        if (slice_5x <= width / 2 + 459) {
-            slice_5x += 20;
+        if (slice_5x <= 0.739 * vw) {
+            slice_5x += 0.01 * vw;
             alpha_5 -= 25;
         }
     } else {
-        slice_5x = width / 2 + 259;
-        slice_5y = height / 2 - 28;
+        slice_5x = 0.635 * vw;
+        slice_5y = 0.47 * vh;
         alpha_5 = 255;
     }
 }
 
 function update_6() {
     if (mouseOn_6) {
-        if (slice_6x <= width / 2 + 385) {
-            slice_6x += 20;
-            slice_6y -= 20;
+        if (slice_6x <= 0.7 * vw) {
+            slice_6x += 0.01 * vw;
+            slice_6y -= 0.02 * vh;
             alpha_6 -= 25;
         }
     } else {
-        slice_6x = width / 2 + 185;
-        slice_6y = height / 2 - 120;
+        slice_6x = 0.596 * vw;
+        slice_6y = 0.372 * vh;
         alpha_6 = 255;
     }
 }

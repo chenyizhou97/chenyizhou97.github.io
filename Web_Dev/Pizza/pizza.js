@@ -10,51 +10,11 @@ let slice_4x, slice_4y;
 let slice_5x, slice_5y;
 let slice_6x, slice_6y;
 
-let vh = window.innerHeight;
-let vw = window.innerWidth;
+let vh;
+let vw;
 
 
-let x1_1 = 622,
-    y1_1 = 335,
-    x2_1 = 960,
-    y2_1 = 265,
-    x3_1 = 965,
-    y3_1 = 545;
 
-let x1_2 = 471,
-    y1_2 = 558,
-    x2_2 = 613,
-    y2_2 = 345,
-    x3_2 = 955,
-    y3_2 = 548;
-
-let x1_3 = 484,
-    y1_3 = 608,
-    x2_3 = 961,
-    y2_3 = 819,
-    x3_3 = 961,
-    y3_3 = 554;
-
-let x1_4 = 977,
-    y1_4 = 813,
-    x2_4 = 1424,
-    y2_4 = 647,
-    x3_4 = 978,
-    y3_4 = 565;
-
-let x1_5 = 985,
-    y1_5 = 549,
-    x2_5 = 1443,
-    y2_5 = 625,
-    x3_5 = 1329,
-    y3_5 = 351;
-
-let x1_6 = 968,
-    y1_6 = 268,
-    x2_6 = 1299,
-    y2_6 = 334,
-    x3_6 = 976,
-    y3_6 = 540;
 
 
 
@@ -69,10 +29,7 @@ function preload() {
 }
 
 function setup() {
-    cnv = createCanvas(vw, vh);
-    cnv.parent('pizza_cooked');
-    imageMode(CENTER);
-    image(bottom, width / 2, height / 2);
+
     alpha_1 = 255;
     alpha_2 = 255;
     alpha_3 = 255;
@@ -80,7 +37,7 @@ function setup() {
     alpha_5 = 255;
     alpha_6 = 255;
 
-    console.log(vh, vw);
+
 
     mouseOn_1 = false;
     mouseOn_2 = false;
@@ -97,32 +54,79 @@ function draw() {
     cnv = createCanvas(vw, vh);
     cnv.parent('pizza_cooked');
 
+    vh = window.innerHeight;
+    vw = window.innerWidth;
+
+    let x1_1 = 0.32 * vw,
+        y1_1 = 0.27 * vh,
+        x2_1 = 0.5 * vw,
+        y2_1 = 0.2 * vh,
+        x3_1 = 0.502 * vw,
+        y3_1 = 0.502 * vh;
+
+    let x1_2 = 0.245 * vw,
+        y1_2 = 0.52 * vh,
+        x2_2 = 0.319 * vw,
+        y2_2 = 0.29 * vh,
+        x3_2 = 0.497 * vw,
+        y3_2 = 0.505 * vh;
+
+    let x1_3 = 0.252 * vw,
+        y1_3 = 0.56 * vh,
+        x2_3 = 0.5 * vw,
+        y2_3 = 0.795 * vh,
+        x3_3 = 0.5 * vw,
+        y3_3 = 0.515 * vh;
+
+    let x1_4 = 0.509 * vw,
+        y1_4 = 0.790 * vh,
+        x2_4 = 0.742 * vw,
+        y2_4 = 0.62 * vh,
+        x3_4 = 0.509 * vw,
+        y3_4 = 0.515 * vh;
+
+    let x1_5 = 0.513 * vw,
+        y1_5 = 0.510 * vh,
+        x2_5 = 0.751 * vw,
+        y2_5 = 0.590 * vh,
+        x3_5 = 0.692 * vw,
+        y3_5 = 0.295 * vh;
+
+    let x1_6 = 0.504 * vw,
+        y1_6 = 0.206 * vh,
+        x2_6 = 0.677 * vw,
+        y2_6 = 0.297 * vh,
+        x3_6 = 0.508 * vw,
+        y3_6 = 0.5 * vh;
+
+    console.log(vw, vh);
+
     imageMode(CENTER);
-    image(bottom, width / 2, height / 2);
+    image(bottom, width / 2, height / 2, 0.559 * vw, 0.715 * vh);
 
     push();
     tint(255, alpha_1);
-    image(pizzaslice_1, slice_1x, slice_1y);
+    image(pizzaslice_1, slice_1x, slice_1y, 0.215 * vw, 0.347 * vh);
     tint(255, alpha_2);
-    image(pizzaslice_2, slice_2x, slice_2y);
+    image(pizzaslice_2, slice_2x, slice_2y, 0.265 * vw, 0.342 * vh);
     tint(255, alpha_3);
-    image(pizzaslice_3, slice_3x, slice_3y);
+    image(pizzaslice_3, slice_3x, slice_3y, 0.26 * vw, 0.3 * vh);
     tint(255, alpha_6);
-    image(pizzaslice_6, slice_6x, slice_6y);
+    image(pizzaslice_6, slice_6x, slice_6y, 0.1875 * vw, 0.3376 * vh);
     tint(255, alpha_5);
-    image(pizzaslice_5, slice_5x, slice_5y);
+    image(pizzaslice_5, slice_5x, slice_5y, 0.26 * vw, 0.381 * vh);
     tint(255, alpha_4);
-    image(pizzaslice_4, slice_4x, slice_4y);
+    image(pizzaslice_4, slice_4x, slice_4y, 0.243 * vw, 0.295 * vh);
     pop();
 
     noStroke();
     noFill();
-    hover_1 = triangle(x1_1, y1_1, x2_1, y2_1, x3_1, y3_1);
-    hover_2 = triangle(x1_2, y1_2, x2_2, y2_2, x3_2, y3_2);
-    hover_3 = triangle(x1_3, y1_3, x2_3, y2_3, x3_3, y3_3);
-    hover_4 = triangle(x1_4, y1_4, x2_4, y2_4, x3_4, y3_4);
-    hover_5 = triangle(x1_5, y1_5, x2_5, y2_5, x3_5, y3_5);
-    hover_6 = triangle(x1_6, y1_6, x2_6, y2_6, x3_6, y3_6);
+    // hover_1 = triangle(x1_1, y1_1, x2_1, y2_1, x3_1, y3_1);
+    // hover_2 = triangle(x1_2, y1_2, x2_2, y2_2, x3_2, y3_2);
+    // hover_3 = triangle(x1_3, y1_3, x2_3, y2_3, x3_3, y3_3);
+    // hover_4 = triangle(x1_4, y1_4, x2_4, y2_4, x3_4, y3_4);
+    // hover_5 = triangle(x1_5, y1_5, x2_5, y2_5, x3_5, y3_5);
+    // hover_6 = triangle(x1_6, y1_6, x2_6, y2_6, x3_6, y3_6);
 
     trianCollision1(mouseX, mouseY, x1_1, y1_1, x2_1, y2_1, x3_1, y3_1);
     trianCollision2(mouseX, mouseY, x1_2, y1_2, x2_2, y2_2, x3_2, y3_2);
