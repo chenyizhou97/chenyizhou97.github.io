@@ -85,7 +85,7 @@ function onDOMLoaded(e) {
     })
 
     .fromTo(origin, 10, { opacity: 0, x: '50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })
-        .fromTo(middle_line, 15, { height: "0%" }, { height: '79%', ease: Power2.easeInOut })
+        .fromTo(middle_line, 15, { height: "0%" }, { height: '84%', ease: Power2.easeInOut })
         .fromTo(p1, 10, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut })
         .fromTo(p1, 10, { x: '50px' }, { x: '0px', ease: Power2.easeInOut }, "-=10")
         .fromTo(matzah, 10, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut }, "-=10")
@@ -106,7 +106,7 @@ function onDOMLoaded(e) {
         .fromTo(p2_1, 1, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut }, "-=0.7")
 
     funfact_tl.fromTo(fun_facts, 0.5, { opacity: 0, x: '50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })
-        .fromTo(middle_line_2, 0.5, { height: "0%" }, { height: '79%', ease: Power2.easeInOut })
+        .fromTo(middle_line_2, 0.5, { height: "0%" }, { height: '84%', ease: Power2.easeInOut })
         .fromTo(p1_2, 0.5, { opacity: 0, x: '50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })
         .fromTo(rocket_container, 0.5, { opacity: 0, x: '-50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut }, "-=0.5")
         .fromTo(p2_2, 0.5, { opacity: 0, x: '-50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })

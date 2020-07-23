@@ -41,37 +41,58 @@
                 top: -0.14vh;
                 left: 5.5vw;
                 font-family: 'Judson';
+                color: white;
             }
             
             .text_container h2 {
                 text-align: left;
                 font-size: 3.75em;
                 letter-spacing: 0.313rem;
-                color: white;
                 text-shadow: 0.25rem 0.25rem 0.625rem #8d4320;
             }
             
-            .text_container p {
+            .container_1 {
+                position: relative;
+                height: 300px;
+            }
+            
+            .container_1 p {
                 text-align: right;
-                margin-top: 10vh;
                 margin-right: 56vw;
-                font-size: 1.313vw;
+                font-size: 1.1vw;
                 color: white;
             }
             
-            .text_container #p2 {
-                text-align: left;
-                margin-right: 4.4vw;
-                margin-left: 50vw;
+            .container_2 {
+                position: relative;
+                top: -8vh;
             }
             
-            .text_container #p3 {
-                margin-top: 15vh;
+            .container_2 p {
+                text-align: left;
+                top: 10;
+                margin-right: 4.4vw;
+                margin-left: 50vw;
+                font-size: 1.1vw;
+                color: white;
+            }
+            
+            .container_3 {
+                position: relative;
+                top: 5vh;
+            }
+            
+            .container_3 p {
+                text-align: right;
+                margin-right: 56vw;
+                font-size: 1.1vw;
+                color: white;
+                font-family: 'Judson';
             }
             
             #matzah {
                 position: absolute;
-                top: 15vh;
+                top: -13vh;
                 right: 17.6vw;
                 width: 22vw;
                 height: auto;
@@ -79,16 +100,15 @@
             
             #europe {
                 position: absolute;
-                top: 50vh;
-                left: 10vw;
-                bottom: 50vh;
+                top: -9vh;
+                left: 7vw;
                 width: 20vw;
                 height: auto;
             }
             
             #asia {
                 position: absolute;
-                bottom: -3.22vh;
+                top: -5vh;
                 right: 12.7vw;
                 width: 28.25vw;
                 height: auto;
@@ -103,9 +123,10 @@
             }
             
             .text_container_2 {
+                position: relative;
                 margin-left: 5.5vw;
                 margin-right: 5.5vw;
-                margin-top: 20vh;
+                margin-top: 0vh;
                 font-family: 'Judson';
             }
             
@@ -120,7 +141,7 @@
             
             #scroll {
                 position: absolute;
-                right: 3.3vw;
+                right: -3.3vw;
                 margin-top: -4.2vh;
                 width: 93.75vw;
                 height: auto;
@@ -139,16 +160,21 @@
             }
             /* page 4 */
             
+            #pizza_cooked {
+                position: relative;
+            }
+            
             #pizza_cutter {
                 position: absolute;
-                top: 420vh;
-                right: 3.125vw;
+                top: 45vh;
+                right: 6vw;
                 width: 18.8vw;
                 height: auto;
             }
             /* page 5 */
             
             .fun_fact_page {
+                position: relative;
                 margin-top: 16vh;
                 margin-left: 5.2vw;
                 margin-right: 5.2vw;
@@ -175,14 +201,13 @@
             
             .fun_fact_page #p2_2 {
                 text-align: left;
-                margin-top: 8vh;
+                margin-top: 14vh;
                 margin-right: 2.6vw;
-                margin-left: 55vw;
+                margin-left: 50vw;
             }
             
             .fun_fact_page #p3_2 {
                 margin-top: 20vh;
-                margin-bottom: 16vh;
             }
             
             #middle_line_2 {
@@ -190,31 +215,31 @@
                 width: 0.28vw;
                 height: 79vh;
                 background-color: #ffd88a;
-                right: 50vw;
+                right: 45vw;
             }
             
             #rocket_container {
                 position: absolute;
                 width: 25.2vw;
-                height: 40vh;
-                right: 13vw;
-                top: 485vh;
+                height: auto;
+                right: 9vw;
+                top: 0vh;
             }
             
             #computer {
                 position: absolute;
                 width: 33.59vw;
                 height: auto;
-                left: 6.25vw;
-                top: 517vh;
+                left: 3vw;
+                top: 30vh;
             }
             
             #pizzaman {
                 position: absolute;
                 width: 21.35vw;
                 height: auto;
-                right: 17.7vw;
-                top: 540vh;
+                right: 15vw;
+                top: 60vh;
             }
             
             #space {
@@ -229,6 +254,10 @@
                 margin-left: 5.2vw;
                 margin-right: 5.2vw;
                 font-family: 'Judson';
+            }
+            
+            .mozzatext_container {
+                position: relative;
             }
             
             .memo_mozzarella h2 {
@@ -246,7 +275,7 @@
             }
             
             #mozzatext {
-                margin-top: 5.34vh;
+                margin-top: 0vh;
                 margin-bottom: 1.6vh;
                 margin-right: 47.9vw;
                 margin-left: 5.2vw;
@@ -254,7 +283,7 @@
             
             #mozzatext_2 {
                 position: absolute;
-                top: 599vh;
+                top: 0vh;
                 margin-top: 1.28vh;
                 margin-bottom: 1.6vh;
                 margin-right: 7.8vw;
@@ -265,12 +294,13 @@
                 position: absolute;
                 width: 23.4vw;
                 height: auto;
-                top: 632vh;
+                top: 30vh;
                 right: 14vw;
             }
             /* lastpage */
             
             .statics_container {
+                position: relative;
                 margin-top: 21.36vh;
                 margin-left: 5.2vw;
                 margin-right: 5.2vw;
@@ -279,15 +309,18 @@
             }
             
             .statics_container div:nth-of-type(1) {
+                position: relative;
                 margin-left: 5.2vw;
             }
             
-            .statics_container div:nth-of-type(3) {
+            .statics_container div:nth-of-type(2) {
+                position: relative;
                 margin-left: 5.2vw;
                 margin-top: 21.36vh;
             }
             
-            .statics_container div:nth-of-type(5) {
+            .statics_container div:nth-of-type(3) {
+                position: relative;
                 margin-left: 5.2vw;
                 margin-top: 21.36vh;
             }
@@ -326,8 +359,8 @@
                 width: 33vw;
                 height: 0.21vh;
                 background-color: #ffd88a;
-                top: 722vh;
-                left: 10vw;
+                top: 23vh;
+                left: -5vw;
             }
             
             #middle_line_4 {
@@ -335,8 +368,8 @@
                 width: 33vw;
                 height: 0.21vh;
                 background-color: #ffd88a;
-                top: 762vh;
-                left: 10vw;
+                top: 5vh;
+                left: -5vw;
             }
             
             .statics_container p {
@@ -352,7 +385,7 @@
             #scale_illustration {
                 position: absolute;
                 right: 27vw;
-                top: 720vh;
+                top: -15vh;
                 width: 9.48vw;
                 height: auto;
             }
@@ -360,25 +393,29 @@
             #US_map {
                 position: absolute;
                 right: 18.2vw;
-                top: 760vh;
+                top: -12vh;
                 width: 23.96vw;
                 height: auto;
             }
             
             #pizza_chart_bot {
                 position: absolute;
-                top: 685vh;
+                top: -10vh;
                 right: 22.35vw;
+                width: 19vw;
+                height: auto;
             }
             
             #pizza_chart_top {
                 margin: 0 auto;
                 position: absolute;
-                top: 685vh;
+                top: -10vh;
                 right: 22.35vw;
                 transform: rotate(-180deg);
                 border-radius: 50%;
                 display: block;
+                width: 19vw;
+                height: auto;
             }
             
             #maskCircle {
@@ -389,6 +426,7 @@
             }
             
             .credit_container {
+                position: relative;
                 border-top: 0.21vh solid black;
                 margin-left: 10.4vw;
                 margin-right: 15.6vw;
@@ -403,8 +441,8 @@
             
             #goTotop {
                 position: absolute;
-                top: 805vh;
-                right: 11.45vw;
+                top: -2vh;
+                right: -5vw;
                 border: none;
                 background-color: transparent;
                 opacity: 0.6;
@@ -413,14 +451,14 @@
             #goTotop:hover {
                 opacity: 1;
                 transition-duration: 1s;
-                animation: float 1s linear infinite;
+                animation: float 0.5s linear infinite;
             }
             
             @keyframes float {
                 from {
-                    top: 805vh
+                    top: -2vh
                 }
                 to {
-                    top: 800vh
+                    top: -5vh
                 }
             }
