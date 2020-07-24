@@ -408,7 +408,7 @@
             
             #scale_illustration {
                 position: absolute;
-                right: 27vw;
+                right: 20vw;
                 top: -15vh;
                 width: 9.48vw;
                 height: auto;
@@ -416,7 +416,7 @@
             
             #US_map {
                 position: absolute;
-                right: 18.2vw;
+                right: 12.2vw;
                 top: -12vh;
                 width: 23.96vw;
                 height: auto;
@@ -424,8 +424,8 @@
             
             #pizza_chart_bot {
                 position: absolute;
-                top: -10vh;
-                right: 22.35vw;
+                top: -15vh;
+                right: 15.35vw;
                 width: 19vw;
                 height: auto;
             }
@@ -433,8 +433,8 @@
             #pizza_chart_top {
                 margin: 0 auto;
                 position: absolute;
-                top: -10vh;
-                right: 22.35vw;
+                top: -15vh;
+                right: 15.35vw;
                 transform: rotate(-180deg);
                 border-radius: 50%;
                 display: block;
