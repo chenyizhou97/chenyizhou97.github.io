@@ -92,25 +92,49 @@
             
             #matzah {
                 position: absolute;
-                top: -13vh;
+                top: 0vh;
                 right: 17.6vw;
-                width: 22vw;
+                width: 25vw;
                 height: auto;
+            }
+            
+            #isareal_map {
+                position: absolute;
+                top: -14vh;
+                right: 24.6vw;
+                height: 40vh;
+                width: auto;
             }
             
             #europe {
                 position: absolute;
+                top: -5vh;
+                left: 9vw;
+                width: 25vw;
+                height: auto;
+            }
+            
+            #europe_map {
+                position: absolute;
                 top: -9vh;
                 left: 7vw;
-                width: 20vw;
+                width: 23vw;
                 height: auto;
             }
             
             #asia {
                 position: absolute;
-                top: -5vh;
+                top: -7vh;
                 right: 12.7vw;
-                width: 28.25vw;
+                width: 25.25vw;
+                height: auto;
+            }
+            
+            #asia_map {
+                position: absolute;
+                top: -8vh;
+                right: 12.7vw;
+                width: 30.25vw;
                 height: auto;
             }
             
