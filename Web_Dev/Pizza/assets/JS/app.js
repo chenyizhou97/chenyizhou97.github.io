@@ -39,6 +39,9 @@ const maskCircle = document.querySelector('#maskCircle')
 const middle_line_3 = document.querySelector('#middle_line_3');
 const middle_line_4 = document.querySelector('#middle_line_4');
 
+const scrollDown = document.querySelector('#scrollDown');
+const toTop = document.querySelector('#toTop');
+
 bodymovin.loadAnimation({
     container: document.getElementById('pizza_pie'),
     render: 'svg',
@@ -65,26 +68,47 @@ const paperscroll_tl = new gsap.timeline();
 const funfact_tl = new gsap.timeline();
 const mozzarella_tl = new gsap.timeline();
 const statics_tl = new gsap.timeline();
+const scrollIconTl = new gsap.timeline({ repeat: -1 });
+const scrollIconTlMove = new gsap.timeline({ repeat: -1 });
+const toTopTl = new gsap.timeline({ repeat: -1 });
 
 pizza_anim.addEventListener('DOMLoaded', onDOMLoaded);
 pizza_anim.setSpeed(1);
+
+scrollIconTl.fromTo(scrollDown.children[2], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(scrollDown.children[2], 0.1, { opacity: 1 }, { opacity: 0.5 })
+    .fromTo(scrollDown.children[1], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(scrollDown.children[1], 0.1, { opacity: 1 }, { opacity: 0.5 })
+    .fromTo(scrollDown.children[0], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(scrollDown.children[0], 0.1, { opacity: 1 }, { opacity: 0.5 })
+
+toTopTl.fromTo(toTop.children[2], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(toTop.children[2], 0.1, { opacity: 1 }, { opacity: 0.5 })
+    .fromTo(toTop.children[1], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(toTop.children[1], 0.1, { opacity: 1 }, { opacity: 0.5 })
+    .fromTo(toTop.children[0], 0.1, { opacity: 0.5 }, { opacity: 1 })
+    .fromTo(toTop.children[0], 0.1, { opacity: 1 }, { opacity: 0.5 })
+
+scrollIconTlMove.fromTo(scrollDown, 0.3, { y: '20px' }, { y: '0px' })
+    .fromTo(scrollDown, 0.3, { y: '0px' }, { y: '20px' })
 
 tl.fromTo(title, 3, { opacity: 0 }, { opacity: 1 }, "+=2")
     .fromTo(title, 2, { y: '150px' }, { y: '0px' }, "-=3")
     .fromTo(appear, 0.1, { opacity: 1 }, { opacity: 0 }, "+=2")
     .fromTo(fall, 0.1, { opacity: 0 }, { opacity: 1 }, "-=1")
+    .fromTo(scrollDown, 1, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut })
 
 
 function onDOMLoaded(e) {
     anim_control.to({ frame: 0 }, 30, {
-        frame: pizza_anim.totalFrames - 1,
-        onUpdate: function() {
-            pizza_anim.goToAndStop(Math.round(this.progress() * 230), true)
-        },
-        ease: Linear.easeNone
-    })
-
-    .fromTo(origin, 10, { opacity: 0, x: '50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })
+            frame: pizza_anim.totalFrames - 1,
+            onUpdate: function() {
+                pizza_anim.goToAndStop(Math.round(this.progress() * 230), true)
+            },
+            ease: Linear.easeNone
+        })
+        .to(scrollDown, 10, { opacity: 0, ease: Power2.easeInOut })
+        .fromTo(origin, 10, { opacity: 0, x: '50px' }, { opacity: 1, x: '0px', ease: Power2.easeInOut })
         .fromTo(middle_line, 15, { height: "0%" }, { height: '84%', ease: Power2.easeInOut })
         .fromTo(p1, 10, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut })
         .fromTo(p1, 10, { x: '50px' }, { x: '0px', ease: Power2.easeInOut }, "-=10")
